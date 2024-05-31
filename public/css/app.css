@@ -1,0 +1,94 @@
+.activo {
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: url('../assets/walls.jpg') no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.322); /* Blanco con opacidad para difuminar */
+    backdrop-filter: blur(2.5px); /* Ajusta el valor del desenfoque según sea necesario */
+    z-index: -1;
+}
+
+header {
+    background-color: #482565;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.talleres-menu ul li a {
+    /*text-decoration: none;*/
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.talleres-content {
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #482565;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px; /* Espacio entre elementos */
+    color: #fff;
+}
+
+ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
